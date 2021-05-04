@@ -13,8 +13,8 @@ for inputed in dir:
     system(f"cwebp -q 80 {new}.png -o {new}.webp")
     print(new, "converted")
     num += 1
-print(num, "convert successful")
-if yesorno == yes:
+print(num, "convert(s) successful")
+if yesorno == "yes":
     system("rm *.png")
     print("remove successful.\n\t goodluck!")
 
