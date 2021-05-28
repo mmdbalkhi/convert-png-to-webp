@@ -7,6 +7,8 @@ new = ""
 num = 0
 
 for inputed in dir:
+    if "png" not in inputed:
+        continue
     new = str(inputed).replace(".png", "")
     system(f"cwebp -q 80 {new}.png -o {new}.webp")
     print(new, "converted")
