@@ -29,5 +29,7 @@ def test_file():
     except:
         assert 1 == 2 
 
-yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
-convert(yesorno)
+if __name__ == '__main__':
+    yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
+    convert(yesorno)
+ 
