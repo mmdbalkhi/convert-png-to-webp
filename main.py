@@ -27,7 +27,7 @@ def test_file():
              assert sha256.hexdigest() == hash
 
     except:
-        assert 1 == 2 
+        pass
 
 if __name__ == '__main__':
     yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
