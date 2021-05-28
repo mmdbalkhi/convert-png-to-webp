@@ -16,9 +16,6 @@ def convert(yesorno="no"):
        system("rm *.png")
        print("remove successful.\n\t goodluck!")
 
-yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
-convert(yesorno)
-
 
 hash = "d1983366c9dc294b9157fd756c9aee69fc413fd7a64df7d3b27b6a74b2b15821" 
 def test_file():
@@ -31,3 +28,6 @@ def test_file():
 
     except:
         assert 1 == 2 
+
+yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
+convert(yesorno)
