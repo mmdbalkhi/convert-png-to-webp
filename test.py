@@ -19,7 +19,7 @@ if yesorno == "yes":
 with open("sample.webp", "r") as f:
     for chunk in iter(lambda: f.read(4096), b""):
         sha256.update(chunk)
-    hash = hash_md5.hexdigest()
+    hash = sha256.hexdigest()
 
 def file_test():
     assert hash == "d1983366c9dc294b9157fd756c9\
