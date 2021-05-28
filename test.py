@@ -1,19 +1,9 @@
 from hashlib import sha256
-from os import system, listdir
+from os import system
 
-dir = listdir()
+new = "sample" 
+system(f"cwebp -q 80 {new} -o {new}.webp")
 
-new = ""
-num = 0
-
-for inputed in dir:
-    if "png" not in inputed:
-        continue
-    new = str(inputed).replace(".png", "")
-    system(f"cwebp -q 80 {new}.png -o {new}.webp")
-    print(new, "converted")
-    num += 1
-print(num, "convert(s) successful")
 
 with open("sample.webp", "r") as f:
     for chunk in iter(lambda: f.read(4096), b""):
