@@ -22,9 +22,9 @@ convert(yesorno)
 
 hash = "d1983366c9dc294b9157fd756c9aee69fc413fd7a64df7d3b27b6a74b2b15821" 
 def test_file():
-    convert()
     try:
-        with open("sample.webp", "rb") as file:
+        convert()
+        with open("sample.webp", "rb") as f:
              for chunk in iter(lambda: f.read(4096), b""):
                  sha256.update(chunk)
              assert sha256.hexdigest() == hash
