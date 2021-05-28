@@ -2,8 +2,7 @@ from os import system, listdir
 
 dir = listdir()
 
-yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.
-Yes or no?")
+yesorno = input("Should I delete the previous file after conversion?\nWarning! It may not be completely converted.Yes or no?")
 
 new = ""
 num = 0
