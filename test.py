@@ -12,9 +12,6 @@ for inputed in dir:
     print(new, "converted")
     num += 1
 print(num, "convert(s) successful")
-if yesorno == "yes":
-    system("rm *.png")
-    print("remove successful.\n\t goodluck!")
 
 with open("sample.webp", "r") as f:
     for chunk in iter(lambda: f.read(4096), b""):
